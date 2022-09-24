@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "JAVA.Pilas.Main",
+            "projectName": "School_6be1988f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "JAVA.Tarea4_SeleccionElementos.Main",
+            "projectName": "School_6be1988f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Potencia",
+            "request": "launch",
+            "mainClass": "JAVA.Tarea3_Recursividad.Potencia",
+            "projectName": "School_6be1988f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fibonacci",
+            "request": "launch",
+            "mainClass": "JAVA.Tarea3_Recursividad.Fibonacci",
+            "projectName": "School_6be1988f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "JAVA.Tarea3_Recursividad.Main",
+            "projectName": "School_6be1988f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MainArre",
+            "request": "launch",
+            "mainClass": "JAVA.Tarea2_RecursividadArreglos.MainArre",
+            "projectName": "School_6be1988f"
+        }
+    ]
+}

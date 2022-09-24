@@ -1,0 +1,76 @@
+package JAVA.Tarea2_RecursividadArreglos;
+import java.util.Scanner;
+
+public class Arreglo {
+
+    int[] arre = new int[10];
+    Scanner sc = new Scanner(System.in);
+
+
+    public Arreglo(){}
+
+    void read(){
+        for (int i = 0; i < 10; i++){
+            arre[i] = (int)(Math.random() * 10+1);
+        }
+    }
+
+    void showArr(int i){
+        if (i < 9) {
+            System.out.println(arre[i]);
+            showArr(i+1);
+        }
+    }
+
+    void showInverseArr(int i){
+        if(i > 0 ) { 
+            System.out.println(arre[i]);
+            showInverseArr(i-1);
+        }
+    }
+ 
+    int sum(int i){
+        int totalSum = 0;
+        if(i > 0){
+            totalSum = arre[i] + sum(i-1);
+        } 
+        return totalSum;
+    }
+
+    float average(int i){
+        float totalAverage = sum(i) / i;
+
+        return totalAverage;
+    }
+
+    int totalElements(int i, int count){
+        if(i > 0){
+            totalElements(i-1, count+1);
+        } 
+        return count;
+    }
+
+    int sumPairs(int i){
+        if( i > 0){
+           if(arre[i] % 2 == 0){
+                return arre[i] + sumPairs(i-1);
+            }     
+            else{
+                return 0 + sumPairs(i-1);
+            }     
+        }
+        return 0;    
+    }
+
+    int totalOdd(int i, int count){
+        if(i > 0){
+            if(arre[i] % 2 != 0){
+                return totalOdd(i-1, count +1);
+            }
+            else{
+                return 0 + totalOdd(i-1, count);
+            }  
+        }
+        return count;
+    }
+}
